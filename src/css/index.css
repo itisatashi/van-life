@@ -167,3 +167,78 @@ footer p {
   color: white;
   margin-top: 2rem;
 }
+
+/* Vans styles */
+.vans-container {
+  background-color: white;
+  padding: 4rem 1rem 8rem;
+}
+
+.vans-title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin: 3rem 1.6rem;
+}
+
+.vans-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 1rem;
+  justify-items: center;
+}
+
+.vans-item img {
+  max-width: 230px;
+  max-height: 230px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.vans-item .item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.vans-item .item-content span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  display: block;
+}
+
+.vans-item h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.vans-item p {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.van-type {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.van-type-simple {
+  background: #e17654;
+}
+
+.van-type-rugged {
+  background: #115e59;
+}
+
+.van-type-luxury {
+  background: #161616;
+}
