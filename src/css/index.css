@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #ffefb9;
+}
+
+div#root {
+  max-width: 55rem;
+  margin: 2rem auto;
+}
+
+/* Navigation styles */
+header {
+  padding: 3.5rem 2.5rem;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .logo {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav-list .nav-item {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.nav-item a {
+  color: #4d4d4d;
+}
+
+/* Footer styles */
+footer {
+  padding: 3rem 0;
+  background-color: #252525;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+/* Home styles */
+.home-container {
+  padding: 6rem 2.5rem;
+  background-image: url("../images/home-banner.png");
+  background-size: cover;
+}
+
+.home-container h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
+  color: white;
+  line-height: 1.2;
+}
+
+.home-container p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: white;
+  margin: 2.5rem 0 4rem;
+  line-height: 1.4;
+}
+
+.home-container a {
+  background-color: #ff8c38;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
