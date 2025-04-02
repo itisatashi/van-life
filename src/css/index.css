@@ -187,6 +187,11 @@ footer p {
   justify-items: center;
 }
 
+.vans-item a {
+  color: #161616;
+  text-decoration: none;
+}
+
 .vans-item img {
   max-width: 230px;
   max-height: 230px;
@@ -220,14 +225,15 @@ footer p {
 }
 
 .van-type {
-  font-weight: 600;
+  background: black;
+  border-radius: 5px;
+  color: white;
   font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
   text-align: center;
   text-decoration: none;
-  background: black;
-  color: white;
-  padding: 0.8rem 2rem;
-  border-radius: 5px;
   text-transform: capitalize;
 }
 
