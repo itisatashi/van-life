@@ -117,3 +117,53 @@ footer p {
   text-decoration: none;
   width: 100%;
 }
+
+/* About banner */
+.about-container {
+  background-color: white;
+}
+.about-container .about-banner-img {
+  width: 100%;
+}
+
+.about-content {
+  padding: 5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-content h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+.about-content p {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.about-action-container {
+  padding: 3rem 3.5rem;
+  background-color: #ffcc8d;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.about-action-container h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.about-action-container .link-button {
+  display: inline-block;
+  background-color: #161616;
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+}
