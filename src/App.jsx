@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Vans from "./pages/Vans";
 
 import "./server/server";
 
@@ -20,7 +21,9 @@ export default function App() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link">Vans</Link>
+              <Link className="nav-link" to="/vans">
+                Vans
+              </Link>
             </li>
           </ul>
         </nav>
@@ -28,6 +31,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/vans" element={<Vans />} />
       </Routes>
       <footer>
         <p>Ⓒ 2022 #VANLIFE</p>
