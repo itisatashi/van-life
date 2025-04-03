@@ -248,3 +248,63 @@ footer p {
 .van-type-luxury {
   background: #161616;
 }
+
+/* Van Detail -(Page)  styles */
+
+.van-detail-container {
+  padding: 7rem 2.5rem;
+  background-color: white;
+}
+
+.van-detail-container h2.loading {
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.van-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.9rem;
+}
+
+.van-detail img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.van-detail .van-name {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.van-detail .van-price {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.van-detail .van-price span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.van-detail .van-description {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.van-detail .link-button {
+  width: 100%;
+  background-color: #ff8c38;
+  text-align: center;
+  padding: 1.6rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
