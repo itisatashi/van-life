@@ -10,6 +10,11 @@ export default function Header() {
         </Link>
         <ul className="nav-list">
           <li className="nav-item">
+            <Link className="nav-link" to="/host">
+              Host
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/about">
               About
             </Link>
