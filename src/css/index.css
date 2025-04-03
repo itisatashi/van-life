@@ -214,12 +214,12 @@ footer p {
   display: block;
 }
 
-.vans-item h3 {
+.vans-item .van-name {
   font-weight: 600;
   font-size: 2rem;
 }
 
-.vans-item p {
+.vans-item .van-description {
   font-weight: 600;
   font-size: 1.6rem;
 }

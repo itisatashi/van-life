@@ -11,11 +11,14 @@ export default function Vans() {
 
   const vansElements = vans.map((van) => (
     <div key={van.id} className="vans-item">
-      <Link to={`/vans/${van.id}`}>
+      <Link
+        to={`/vans/${van.id}`}
+        aria-label={`View details for ${van.name},priced at $${van.price} per day`}
+      >
         <img src={van.imageUrl} alt={`An image of ${van.name}`} />
         <div className="item-content">
-          <h3>{van.name}</h3>
-          <p>
+          <p className="van-name">{van.name}</p>
+          <p className="van-description">
             ${van.price} <span>/day</span>{" "}
           </p>
         </div>
