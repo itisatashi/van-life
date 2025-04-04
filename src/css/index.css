@@ -33,6 +33,7 @@ div#root {
 
 main {
   background-color: white;
+  padding: 3.5rem 2.5rem;
 }
 
 /* Navigation styles */
@@ -328,7 +329,7 @@ footer p {
 /* HostLayout styles */
 .host-layout-navbar {
   background-color: white;
-  padding: 2rem 2.5rem;
+  padding: 2rem 0;
 }
 .host-layout-nav-list {
   list-style: none;
@@ -347,4 +348,61 @@ footer p {
   color: #161616;
   text-decoration: underline;
   transition: color 0.3s ease-in-out;
+}
+
+/* HostVans page styles */
+
+.host-vans-container {
+  margin: 3rem 0;
+}
+
+.host-vans-container > h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+
+.host-van-link-wrapper {
+  text-decoration: none;
+  color: #161616;
+}
+
+.host-vans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.host-van-item {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 2.4rem;
+  background: #fcebc4;
+  border-radius: 6px;
+  gap: 1.7rem;
+}
+
+.host-van-item img {
+  max-height: 65px;
+  max-width: 65px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.host-van-info h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.host-van-info p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 0.3rem;
+  color: #4d4d4d;
+}
+
+.host-van-info p > span {
+  font-weight: 400;
+  font-size: 1.4rem;
 }
