@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Outlet, Link } from "react-router-dom";
 
 export default function HostVansDetail() {
   const params = useParams();
@@ -11,11 +11,13 @@ export default function HostVansDetail() {
       .then((data) => setCurrentVan(data.vans));
   }, [params.id]);
 
-  console.log(currentVan);
   return (
-    <>
+    <section className="host-van-detail-container">
+      <Link to=".." relative="path" className="back-button">
+        &larr; <span>Back to all vans</span>
+      </Link>
       {currentVan ? (
-        <section className="host-van-detail-container">
+        <>
           <div className="host-van-detail-card">
             <div className="host-van-detail-image-wrapper">
               <img
@@ -33,10 +35,11 @@ export default function HostVansDetail() {
               </div>
             </div>
           </div>
-        </section>
+          <Outlet />
+        </>
       ) : (
-        <h2>Loading...</h2>
+        <h1>Loading...</h1>
       )}
-    </>
+    </section>
   );
 }

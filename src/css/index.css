@@ -450,3 +450,15 @@ footer p {
   font-size: 1.3rem;
   margin-top: 1.7rem;
 }
+
+.host-van-detail-container .back-button {
+  display: inline-block;
+  background-color: #161616;
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+}
