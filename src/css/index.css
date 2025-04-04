@@ -462,3 +462,30 @@ footer p {
   color: white;
   margin-top: 2rem;
 }
+
+.host-van-nav {
+  margin: 3rem 0;
+}
+
+.host-van-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.host-van-nav-list a {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.host-van-nav-list a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+.host-van-nav-list .active-link {
+  font-weight: 700;
+  text-decoration: underline;
+}

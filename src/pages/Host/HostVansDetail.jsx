@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Outlet, Link } from "react-router-dom";
+import { useParams, Outlet, Link, NavLink } from "react-router-dom";
 
 export default function HostVansDetail() {
   const params = useParams();
@@ -34,8 +34,45 @@ export default function HostVansDetail() {
                 </p>
               </div>
             </div>
+
+            <nav className="host-van-nav">
+              <ul className="host-van-nav-list">
+                <li className="host-van-nav-item">
+                  <NavLink
+                    to="."
+                    end
+                    className={({ isActive }) =>
+                      isActive ? "active-link" : null
+                    }
+                  >
+                    Details
+                  </NavLink>
+                </li>
+                <li className="host-van-nav-item">
+                  <NavLink
+                    to="pricing"
+                    className={({ isActive }) =>
+                      isActive ? "active-link" : null
+                    }
+                  >
+                    Pricing
+                  </NavLink>
+                </li>
+                <li className="host-van-nav-item">
+                  <NavLink
+                    to="photos"
+                    className={({ isActive }) =>
+                      isActive ? "active-link" : null
+                    }
+                  >
+                    Photos
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
+
+            <Outlet />
           </div>
-          <Outlet />
         </>
       ) : (
         <h1>Loading...</h1>
