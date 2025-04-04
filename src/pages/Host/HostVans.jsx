@@ -10,8 +10,6 @@ export default function HostVans() {
       .then((data) => setVans(data.vans));
   }, []);
 
-  console.log(vans);
-
   const vansElements = vans.map((van) => (
     <Link
       key={van.id}
