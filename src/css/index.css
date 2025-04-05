@@ -204,6 +204,11 @@ footer p {
   margin-bottom: 6rem;
 }
 
+.van-list-filter-buttons button {
+  border: none;
+  background-color: transparent;
+}
+
 .van-list-filter-buttons .filter-button {
   background-color: #ffead0;
   color: #4d4d4d;
