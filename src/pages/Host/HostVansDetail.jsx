@@ -71,7 +71,7 @@ export default function HostVansDetail() {
               </ul>
             </nav>
 
-            <Outlet />
+            <Outlet context={currentVan} />
           </div>
         </>
       ) : (
