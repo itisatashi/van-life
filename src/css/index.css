@@ -188,19 +188,49 @@ footer p {
 /* Vans styles */
 .vans-container {
   background-color: white;
-  padding: 4rem 1rem 8rem;
+  padding: 0rem 1rem 8rem;
 }
 
 .vans-title {
   font-weight: 700;
   font-size: 3.2rem;
-  margin: 3rem 1.6rem;
+  margin: 3rem 0;
+}
+
+.van-list-filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.van-list-filter-buttons .filter-button {
+  background-color: #ffead0;
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 1rem 2.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.van-list-filter-buttons .filter-button:hover {
+  background-color: #ff8c38;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.van-list-filter-buttons .clear-filter {
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: underline;
 }
 
 .vans-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5rem 1rem;
+  gap: 5rem 2.5rem;
   justify-items: center;
 }
 
