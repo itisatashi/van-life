@@ -1,10 +1,10 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 
 export default function VanDetail() {
   const params = useParams();
+  const location = useLocation();
   const [van, setVan] = React.useState(null);
-  console.log(params);
 
   // Fetch the van data from the API when the component mounts
   // and when the params.id changes
@@ -20,7 +20,11 @@ export default function VanDetail() {
       {van ? (
         <div className="van-detail">
           {/* Link back to the vans list */}
-          <Link to=".." relative="path" className="back-button">
+          <Link
+            to={location.state ? `..?${location.state.search}` : ".."}
+            relative="path"
+            className="back-button"
+          >
             &larr; <span>Back to all vans</span>
           </Link>
           {/* Render the van image */}
