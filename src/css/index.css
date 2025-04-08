@@ -486,7 +486,7 @@ footer p {
   margin-top: 1.7rem;
 }
 
-.host-van-detail-container .back-button {
+.back-button {
   display: inline-block;
   background-color: #161616;
   padding: 1.2rem 2rem;

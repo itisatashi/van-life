@@ -15,6 +15,9 @@ export default function VanDetail() {
     <section className="van-detail-container">
       {van ? (
         <div className="van-detail">
+          <Link to=".." relative="path" className="back-button">
+            &larr; <span>Back to all vans</span>
+          </Link>
           <img src={van.imageUrl} alt={`An image of ${van.name}.`} />
           <i className={`van-type van-type-${van.type}`}>{van.type}</i>
           <h3 className="van-name">{van.name}</h3>
