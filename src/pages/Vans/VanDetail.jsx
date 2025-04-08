@@ -14,17 +14,15 @@ export default function VanDetail() {
       .then((data) => setVan(data.vans));
   }, [params.id]);
 
+  const search = location.state?.search || "";
+
   return (
     <section className="van-detail-container">
       {/* If the van data is available, render the van detail */}
       {van ? (
         <div className="van-detail">
           {/* Link back to the vans list */}
-          <Link
-            to={location.state ? `..?${location.state.search}` : ".."}
-            relative="path"
-            className="back-button"
-          >
+          <Link to={`..${search}`} relative="path" className="back-button">
             &larr; <span>Back to all vans</span>
           </Link>
           {/* Render the van image */}
