@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Vans from "./pages/Vans/Vans";
 import VanDetail from "./pages/Vans/VanDetail";
 import NotFound from "./pages/NotFound";
+import Login from "./Login";
 
 // Importing layout components
 import Layout from "./components/Layout";
@@ -34,6 +35,7 @@ export default function App() {
           {/* Public routes */}
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="login" element={<Login />} />
 
           {/* Vans routes */}
           <Route path="vans" element={<Vans />} />

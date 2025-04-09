@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import avatarIcon from "../images/avatar-icon.png";
 
 // Header component serves as a wrapper for the website's navigation
 export default function Header() {
@@ -44,6 +45,11 @@ export default function Header() {
             >
               Vans
             </NavLink>
+          </li>
+          <li className="nav-item">
+            <Link to="login" className="login-link">
+              <img src={avatarIcon} className="login-icon" />
+            </Link>
           </li>
         </ul>
       </nav>
