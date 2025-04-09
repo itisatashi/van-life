@@ -12,6 +12,7 @@ import Login from "./Login";
 // Importing layout components
 import Layout from "./components/Layout";
 import HostLayout from "./components/HostLayout";
+import AuthRequiredLayout from "./components/AuthRequiredLayout";
 
 // Importing host-related components
 import Dashboard from "./pages/Host/Dashboard";
@@ -41,17 +42,19 @@ export default function App() {
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} />
 
-          {/* Host routes with nested layout */}
-          <Route path="host" element={<HostLayout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="income" element={<Income />} />
-            <Route path="vans" element={<HostVans />} />
-            <Route path="reviews" element={<Reviews />} />
-            {/* Nested routes for each host van */}
-            <Route path="vans/:id" element={<HostVansDetail />}>
-              <Route index element={<HostVanInfo />} />
-              <Route path="pricing" element={<HostVanPricing />} />
-              <Route path="photos" element={<HostVanPhotos />} />
+          <Route element={<AuthRequiredLayout />}>
+            {/* Host routes with nested layout */}
+            <Route path="host" element={<HostLayout />}>
+              <Route index element={<Dashboard />} />
+              <Route path="income" element={<Income />} />
+              <Route path="vans" element={<HostVans />} />
+              <Route path="reviews" element={<Reviews />} />
+              {/* Nested routes for each host van */}
+              <Route path="vans/:id" element={<HostVansDetail />}>
+                <Route index element={<HostVanInfo />} />
+                <Route path="pricing" element={<HostVanPricing />} />
+                <Route path="photos" element={<HostVanPhotos />} />
+              </Route>
             </Route>
           </Route>
           <Route path="*" element={<NotFound />} />
