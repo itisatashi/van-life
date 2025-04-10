@@ -54,7 +54,7 @@ export default function Header() {
               <img src={avatarIcon} className="login-icon" />
             </Link>
           </li>
-          <button onClick={fakeLogout()}>X</button>
+          <button onClick={fakeLogout}>X</button>
         </ul>
       </nav>
     </header>
