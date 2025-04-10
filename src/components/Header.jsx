@@ -4,6 +4,9 @@ import avatarIcon from "../images/avatar-icon.png";
 
 // Header component serves as a wrapper for the website's navigation
 export default function Header() {
+  function fakeLogout() {
+    localStorage.removeItem("loggedin");
+  }
   return (
     <header>
       <nav>
@@ -51,6 +54,7 @@ export default function Header() {
               <img src={avatarIcon} className="login-icon" />
             </Link>
           </li>
+          <button onClick={fakeLogout()}>X</button>
         </ul>
       </nav>
     </header>
